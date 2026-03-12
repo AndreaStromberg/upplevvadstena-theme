@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+:root {
+  --uv-font-headings: var(--wp--preset--font-family--open-sans);
+  --uv-font-sans: var(--wp--preset--font-family--dosis);
+
+  --uv-font-size-xs: 0.563rem;
+  --uv-font-size-s: 0.75rem;
+  --uv-font-size-default: 1rem;
+  --uv-font-size-m: 1.313rem;
+  --uv-font-size-lg: 1.75rem;
+  --uv-font-size-xl: 2.375rem;
+  --uv-font-size-2xl: 3.188rem;
+  --uv-font-size-3xl: 4.188rem;
+}
+
+/* TYPOGRAPHY */
+
+body,
+input,
+button {
+  font-family: var(--uv-font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--uv-font-headings);
+}

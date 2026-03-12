@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "useRootPaddingAwareAlignments": true,
+    "typography": {
+      "customFontSize": true,
+      "defaultFontSizes": false,
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Open Sans\", sans-serif",
+          "name": "Open Sans",
+          "slug": "open-sans",
+          "fontFace": [
+            {
+              "fontFamily": "Open Sans",
+              "fontWeight": "700",
+              "src": ["file:./assets/fonts/OpenSans-Bold.ttf"]
+            }
+          ]
+        },
+        {
+          "fontFamily": "Dosis, sans-serif",
+          "name": "Dosis",
+          "slug": "dosis",
+          "fontFace": [
+            {
+              "fontFamily": "Dosis",
+              "src": ["file:./assets/fonts/Dosis-VariableFont_wght.ttf"]
+            }
+          ]
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "Extra Small",
+          "slug": "uv-extra-small",
+          "size": "var(--uv-font-size-xs)"
+        },
+        {
+          "name": "Small",
+          "slug": "uv-small",
+          "size": "var(--uv-font-size-s)"
+        },
+        {
+          "name": "Default",
+          "slug": "default",
+          "size": "var(--uv-font-size-default)"
+        },
+        {
+          "name": "Medium",
+          "slug": "uv-medium",
+          "size": "var(--uv-font-size-m)"
+        },
+        {
+          "name": "Large",
+          "slug": "uv-large",
+          "size": "var(--uv-font-size-lg)"
+        },
+        {
+          "name": "Extra Large",
+          "slug": "uv-extra-large",
+          "size": "var(--uv-font-size-xl)"
+        },
+        {
+          "name": "2XL",
+          "slug": "uv-xxl",
+          "size": "var(--uv-font-size-2xl)"
+        },
+
+        {
+          "name": "3XL",
+          "slug": "uv-3xl",
+          "size": "var(--uv-font-size-3xl)"
+        }
+      ]
+    }
+  },
+  "styles": {},
+  "customTemplates": [],
+  "templateParts": [],
+  "patterns": []
+}
