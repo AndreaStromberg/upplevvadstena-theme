@@ -11,6 +11,7 @@
         {
           "fontFamily": "\"Open Sans\", sans-serif",
           "name": "Open Sans",
+
           "slug": "open-sans",
           "fontFace": [
             {
@@ -27,6 +28,8 @@
           "fontFace": [
             {
               "fontFamily": "Dosis",
+              "fontWeight": "400 600 700",
+
               "src": ["file:./assets/fonts/Dosis-VariableFont_wght.ttf"]
             }
           ]
@@ -117,7 +120,27 @@
       ]
     }
   },
-  "styles": {},
+  "styles": {
+    "blocks": {
+      "core/button": {
+        "color": {
+          "background": "var(--uv-color-accent, #F28E00)"
+        },
+        "typography": {
+          "fontWeight": "600",
+          "fontSize": "1rem"
+        },
+        "spacing": {
+          "padding": {
+            "top": "0.95em",
+            "bottom": "0.95em",
+            "left": "1.9em",
+            "right": "1.9em"
+          }
+        }
+      }
+    }
+  },
   "customTemplates": [],
   "templateParts": [],
   "patterns": []

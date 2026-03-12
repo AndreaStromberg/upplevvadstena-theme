@@ -50,7 +50,8 @@ figure {
   p,
   li,
   input,
-  button {
+  button,
+  .wp-block-button__link {
     font-family: var(--uv-font-sans);
   }
 
