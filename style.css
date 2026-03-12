@@ -19,9 +19,11 @@ figure {
 }
 
 :root {
+  /* Fonts */
   --uv-font-headings: var(--wp--preset--font-family--open-sans);
   --uv-font-sans: var(--wp--preset--font-family--dosis);
 
+  /* Font sizes */
   --uv-font-size-xs: 0.563rem;
   --uv-font-size-s: 0.75rem;
   --uv-font-size-default: 1rem;
@@ -30,21 +32,34 @@ figure {
   --uv-font-size-xl: 2.375rem;
   --uv-font-size-2xl: 3.188rem;
   --uv-font-size-3xl: 4.188rem;
+
+  /* Colors */
+  --uv-color-dark: #372c1d;
+  --uv-color-light: #ffffff;
+  --uv-color-gray: #efebe6;
+  --uv-color-accent: #f28e00;
+  --uv-color-accent-300: #f7bb66;
+  --uv-color-accent-200: #fad299;
+  --uv-color-accent-100: #fce8cc;
 }
 
 /* TYPOGRAPHY */
 
-body,
-input,
-button {
-  font-family: var(--uv-font-sans);
-}
+.container,
+.editor-styles-wrapper {
+  p,
+  li,
+  input,
+  button {
+    font-family: var(--uv-font-sans);
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--uv-font-headings);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--uv-font-headings);
+  }
 }

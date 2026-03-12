@@ -75,6 +75,46 @@
           "size": "var(--uv-font-size-3xl)"
         }
       ]
+    },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "name": "Dark",
+          "slug": "dark",
+          "color": "var(--uv-color-dark, #372C1D)"
+        },
+        {
+          "name": "Light",
+          "slug": "light",
+          "color": "var(--uv-color-light, #fff)"
+        },
+        {
+          "name": "Gray",
+          "slug": "gray",
+          "color": "var(--uv-color-gray, #EFEBE6)"
+        },
+        {
+          "name": "Accent",
+          "slug": "accent",
+          "color": "var(--uv-color-accent, #F28E00)"
+        },
+        {
+          "name": "Accent - Light",
+          "slug": "accent-light",
+          "color": "var(--uv-color-accent-300, #F7BB66)"
+        },
+        {
+          "name": "Accent - Lighter",
+          "slug": "accent-lighter",
+          "color": "var(--uv-color-accent-200, #FAD299)"
+        },
+        {
+          "name": "Accent - Lightest",
+          "slug": "accent-lightest",
+          "color": "var(--uv-color-accent-100, #FCE8CC) "
+        }
+      ]
     }
   },
   "styles": {},
