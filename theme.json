@@ -4,6 +4,56 @@
   "settings": {
     "appearanceTools": true,
     "useRootPaddingAwareAlignments": true,
+    "layout": {
+      "contentSize": "var(--uv-content-size)",
+      "wideSize": "var(--uv-wide-size)"
+    },
+    "spacing": {
+      "defaultSpacingSizes": false,
+      "units": ["px", "em", "rem", "vh", "vw", "%"],
+      "spacingSizes": [
+        {
+          "name": "Extra small",
+          "slug": "30",
+          "size": "var(--uv-spacing-xs)"
+        },
+        {
+          "name": "Small",
+          "slug": "40",
+          "size": "var(--uv-spacing-s)"
+        },
+        {
+          "name": "Medium",
+          "slug": "50",
+          "size": "var(--uv-spacing-m)"
+        },
+        {
+          "name": "Large",
+          "slug": "60",
+          "size": "var(--uv-spacing-l)"
+        },
+        {
+          "name": "Extra large",
+          "slug": "70",
+          "size": "var(--uv-spacing-xl)"
+        },
+        {
+          "name": "XXL",
+          "slug": "80",
+          "size": "var(--uv-spacing-2xl)"
+        },
+        {
+          "name": "3XL",
+          "slug": "90",
+          "size": "var(--uv-spacing-3xl)"
+        },
+        {
+          "name": "4XL",
+          "slug": "100",
+          "size": "var(--uv-spacing-4xl)"
+        }
+      ]
+    },
     "typography": {
       "customFontSize": true,
       "defaultFontSizes": false,

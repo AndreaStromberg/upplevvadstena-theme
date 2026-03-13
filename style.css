@@ -41,6 +41,20 @@ figure {
   --uv-color-accent-300: #f7bb66;
   --uv-color-accent-200: #fad299;
   --uv-color-accent-100: #fce8cc;
+
+  /* Layout settings */
+  --uv-content-size: 50rem;
+  --uv-wide-size: 75rem;
+
+  /* Spacing */
+  --uv-spacing-s: 12px;
+  --uv-spacing-default: 16px;
+  --uv-spacing-m: 24px;
+  --uv-spacing-l: 32px;
+  --uv-spacing-xl: 40px;
+  --uv-spacing-2xl: 48px;
+  --uv-spacing-3xl: 64px;
+  --uv-spacing-4xl: 100px;
 }
 
 /* TYPOGRAPHY */
