@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php get_header(); ?>
+<main class="site-content">
+    <div class="gutenberg">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php bloginfo('name'); ?></title>
-    <?php wp_head(); ?>
-</head>
-
-<body>
-    <div class="container">
-
+        <?php the_content(); ?>
 
     </div>
+</main>
 
-    <?php wp_footer(); ?>
-</body>
-
-</html>
+<?php get_footer(); ?>
