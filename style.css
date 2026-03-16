@@ -46,6 +46,12 @@ figure {
   --uv-content-size: 50rem;
   --uv-wide-size: 75rem;
 
+  --uv-layout-grid: [full-start] minmax(0, 1fr) [wide-start]
+    minmax(0, calc((var(--uv-wide-size) - var(--uv-content-size)) / 2))
+    [content-start] minmax(0, var(--uv-content-size)) [content-end]
+    minmax(0, calc((var(--uv-wide-size) - var(--uv-content-size)) / 2))
+    [wide-end] minmax(0, 1fr) [full-end];
+
   /* Spacing */
   --uv-spacing-s: 12px;
   --uv-spacing-default: 16px;
@@ -76,5 +82,24 @@ figure {
   h5,
   h6 {
     font-family: var(--uv-font-headings);
+  }
+}
+
+/* MAIN LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: var(--uv-layout-grid);
+
+  /* Lägg till dessa inställningar till gutenberg-container */
+  & > * {
+    grid-column: content;
+  }
+
+  & > .alignwide {
+    grid-column: wide;
+  }
+
+  & > .alignfull {
+    grid-column: full;
   }
 }
