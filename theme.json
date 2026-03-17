@@ -193,6 +193,12 @@
     }
   },
   "customTemplates": [],
-  "templateParts": [],
+  "templateParts": [
+    {
+      "title": "Sidfot",
+      "area": "footer",
+      "name": "footer"
+    }
+  ],
   "patterns": []
 }
