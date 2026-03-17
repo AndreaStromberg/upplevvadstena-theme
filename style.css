@@ -85,6 +85,12 @@ figure {
   h6 {
     font-family: var(--uv-font-headings);
   }
+
+  .link-card {
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 /* MAIN LAYOUT */
@@ -202,5 +208,19 @@ figure {
 
   & > .alignfull {
     grid-column: full;
+  }
+
+  /* Göra hela kortet klickbart */
+  .link-card {
+    a {
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 400px;
+      }
+    }
   }
 }
