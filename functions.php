@@ -16,3 +16,13 @@ function uv_script_and_styles()
 }
 
 add_action('enqueue_block_assets', 'uv_script_and_styles');
+
+function uv_script()
+{
+    // Register the script like this for a theme:
+    // wp_register_script('main-script', get_template_directory_uri() . '/main.js');
+    // wp_enqueue_script('main-script');
+    wp_enqueue_script('tyc_scripts', get_theme_file_uri('/main.js'), array(), false, true);
+}
+
+add_action('wp_enqueue_scripts', 'uv_script');

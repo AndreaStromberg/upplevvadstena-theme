@@ -210,6 +210,38 @@ figure {
     grid-column: full;
   }
 
+  /* .wp-block-cover {
+    position: relative;
+  } */
+
+  /* .gutenberg {
+    & .wp-block-cover {
+      & .paus {
+        opacity: 1;
+      }
+    }
+  } */
+
+  /* .wp-block-cover__video-background {
+    visibility: hidden;
+  } */
+
+  .pausknapp {
+    position: absolute;
+    bottom: -200px;
+    left: 48px;
+  }
+
+  /* .hero {
+    position: relative;
+  }
+
+  .pausknapp {
+    position: absolute;
+    bottom: 48px;
+    left: 48px;
+  } */
+
   /* Göra hela kortet klickbart */
   .link-card {
     a {

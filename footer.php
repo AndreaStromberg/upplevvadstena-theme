@@ -1,7 +1,4 @@
-<footer class="site-footer">
-    Copyright
-</footer>
-
+<?php block_template_part('footer') ?>
 
 </div>
 
