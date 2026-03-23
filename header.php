@@ -48,8 +48,8 @@
 
                         </li>
 
-                        <li class="top-buttons__item">
-                            <button class="button">
+                        <li class="top-buttons__item language-button">
+                            <button class="button ">
                                 <span class="button__text">Language</span>
                                 <span class="button__text button__text--responsive">Lang.</span>
                                 <figure class="button__icon button__icon--chevron">
@@ -64,7 +64,7 @@
                         </li>
 
                         <li class="top-buttons__item top-buttons__item--hidden">
-                            <button class="button">
+                            <button id="menu-button" class="button">
                                 <figure class="button__icon">
                                     <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M16.9722 9.76318C17.524 9.74754 17.9845 10.1821 18.0005 10.7339C18.0163 11.2859 17.5809 11.7464 17.0288 11.7622L8.72119 12.0005H8.66162L0.969236 11.7622C0.417393 11.745 -0.0165649 11.2838 0.000485759 10.7319C0.0175446 10.1799 0.479717 9.74613 1.03174 9.76318L8.69482 9.99951L16.9722 9.76318ZM16.9722 4.88232C17.5241 4.86668 17.9847 5.30107 18.0005 5.85302C18.0163 6.40508 17.5809 6.86555 17.0288 6.88135L8.72119 7.11865H8.66162L0.969236 6.88135C0.41749 6.8641 -0.0163954 6.40284 0.000485759 5.85107C0.0175404 5.29905 0.479714 4.86527 1.03174 4.88232L8.69482 5.11865L16.9722 4.88232ZM16.9722 0.000485759C17.5241 -0.0151483 17.9847 0.420202 18.0005 0.972165C18.0161 1.5241 17.5808 1.9847 17.0288 2.00049L8.72119 2.23779H8.66162L0.969236 2.00049C0.417383 1.98324 -0.0165652 1.52114 0.000485759 0.969236C0.0177269 0.417383 0.479833 -0.0165652 1.03174 0.000485759L8.69482 0.238767L16.9722 0.000485759Z" fill="currentColor" />
@@ -79,3 +79,35 @@
                 </div>
             </div>
         </header>
+
+        <nav class="responsive-menu">
+
+            <div class="responsive-menu__inner">
+                <ul>
+                    <li><a href="">Se & Upplev</a></li>
+                    <li><a href="">Äta & Bo</a></li>
+                    <li><a href="">Butiker</a></li>
+                    <li><a href="">Evenemang</a></li>
+                    <li><a href="">Historia</a></li>
+                </ul>
+
+                <!-- <ul class="responsive-menu__buttons">
+                    <li class="responsive-menu__item responsive-menu__item--language">
+                        <button class="button ">
+                            <span class="button__text">Language</span>
+                            <span class="button__text button__text--responsive">Lang.</span>
+                            <figure class="button__icon button__icon--chevron">
+                                <svg width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.00001L14 13L27 1.00001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel" />
+                                </svg>
+                            </figure>
+
+
+                        </button>
+
+                    </li>
+                </ul> -->
+            </div>
+
+
+        </nav>
