@@ -12,24 +12,26 @@
 //   hero.classList.add("paus")
 // }
 
-window.addEventListener("DOMContentLoaded", function () {
-  console.log("Hejsan svejsan")
+// DET HÄR GJORDE VI SOM FUNKAR
 
-  //hämta in knapp
-  const pausButton = document.querySelector(".button--paus")
+// window.addEventListener("DOMContentLoaded", function () {
+//   console.log("Hejsan svejsan")
 
-  //hämta in hero
-  const hero = document.querySelector(".hero")
+//   //hämta in knapp
+//   const pausButton = document.querySelector(".button--paus")
 
-  //funktion för att göra hero mörk
-  const pausVideo = () => {
-    console.log("tjofräs, nu ska videon pausa")
-    let myElement = document.querySelector(".wp-block-cover__video-background")
-    myElement.style.visibility = "hidden"
+//   //hämta in hero
+//   const hero = document.querySelector(".hero")
 
-    hero.classList.add("paus")
-  }
+//   //funktion för att göra hero mörk
+//   const pausVideo = () => {
+//     console.log("tjofräs, nu ska videon pausa")
+//     let myElement = document.querySelector(".wp-block-cover__video-background")
+//     myElement.style.visibility = "hidden"
 
-  //eventlyssnare på knappen
-  pausButton.addEventListener("click", pausVideo)
-})
+//     hero.classList.add("paus")
+//   }
+
+//   //eventlyssnare på knappen
+//   pausButton.addEventListener("click", pausVideo)
+// })

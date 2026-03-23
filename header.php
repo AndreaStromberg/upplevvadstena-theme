@@ -13,7 +13,7 @@
         <header class="site-header">
             <div class="site-header__inner">
                 <!-- Branding -->
-                <a href="<?php echo home_url('/'); ?>">
+                <a href="<?php echo home_url('/'); ?>" class="site-header__branding">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo2.svg" alt="Upplev Vadstena Logotyp">
                 </a>
 

@@ -109,10 +109,43 @@ figure {
   padding: var(--uv-spacing-m) var(--uv-spacing-2xl);
   display: grid;
 
+  transition: all 0.3s;
+
   .site-header__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+  }
+
+  .site-header__branding {
+    img {
+      width: 120px;
+      transition: all 0.3s;
+    }
+  }
+
+  &.site-header--scrolled {
+    padding-block: 0;
+    height: 80px;
+    background-color: var(--uv-color-light);
+
+    .site-header__branding {
+      img {
+        position: absolute;
+        width: 100px;
+        top: 0;
+      }
+    }
+
+    .site-menu {
+      a {
+        color: var(--uv-color-dark);
+      }
+    }
+
+    .button__text {
+      color: var(--uv-color-dark);
+    }
   }
 }
 
@@ -226,10 +259,14 @@ figure {
     visibility: hidden;
   } */
 
-  .pausknapp {
+  /* PAUSKNAPP - EGEN */
+  /* .pausknapp {
     position: absolute;
     bottom: -200px;
     left: 48px;
+  } */
+  .pausknapp {
+    display: none;
   }
 
   /* .hero {
@@ -254,5 +291,33 @@ figure {
         height: 400px;
       }
     }
+  }
+}
+
+.video-control {
+  position: absolute;
+  left: var(--uv-spacing-2xl);
+  bottom: var(--uv-spacing-2xl);
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  gap: var(--uv-spacing-s);
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+
+  text-transform: uppercase;
+
+  color: var(--uv-color-light);
+  background-color: rgba(255 255 255 / 30%);
+  padding: 10px 20px;
+  border-radius: 99px;
+  font-size: var(--uv-font-size-default);
+  font-weight: 600;
+
+  .video-control__icon {
+    width: 12px;
   }
 }
