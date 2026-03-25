@@ -315,6 +315,7 @@ figure {
   z-index: 2;
   background-color: var(--uv-color-light);
   color: var(--uv-color-dark);
+  display: none;
 
   &.responsive-menu--visible {
     display: grid;
@@ -327,6 +328,11 @@ figure {
     justify-content: center;
     text-align: center;
     gap: var(--uv-spacing-2xl);
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    margin-right: 10rem;
   }
 
   ul {
@@ -350,6 +356,10 @@ figure {
     .button__text {
       color: var(--uv-color-dark);
     }
+  }
+
+  @media screen and (min-width: 900px) {
+    display: none !important;
   }
 }
 
@@ -450,5 +460,128 @@ figure {
 
   .video-control__icon {
     width: 12px;
+  }
+
+  @media screen and (max-width: 766px) {
+    left: var(--uv-spacing-m);
+    bottom: var(--uv-spacing-m);
+  }
+}
+
+/* Gutenberg blocks */
+
+.hero {
+  @media screen and (max-width: 1240px) {
+    .hero__title {
+      line-height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .hero__title {
+      font-size: 4rem !important;
+      line-height: 5.625rem;
+    }
+  }
+
+  @media screen and (max-width: 766px) {
+    .hero__title {
+      font-size: 3rem !important;
+      line-height: 100%;
+      white-space: wrap !important;
+    }
+
+    .hero__welcome {
+      font-size: 1.5rem !important;
+      line-height: 100%;
+    }
+
+    .hero__cta {
+      a {
+        font-size: 1rem !important;
+        line-height: 100%;
+      }
+    }
+
+    .hero__content {
+      gap: 10px !important;
+    }
+  }
+}
+
+.card-grid {
+  .link-card:nth-child(1) {
+    order: 10;
+  }
+  .link-card:nth-child(2) {
+    order: 20;
+  }
+  .link-card:nth-child(3) {
+    order: 30;
+  }
+  .link-card:nth-child(4) {
+    order: 40;
+  }
+  .link-card:nth-child(5) {
+    order: 50;
+  }
+  .link-card:nth-child(6) {
+    order: 60;
+  }
+  .link-card:nth-child(7) {
+    order: 70;
+  }
+  .link-card:nth-child(8) {
+    order: 80;
+  }
+
+  @media screen and (max-width: 1240px) {
+    grid-template-columns: 1fr 1fr 1fr !important;
+
+    .link-card:nth-child(4) {
+      grid-column: span 2;
+      order: 40;
+    }
+    .link-card:nth-child(5) {
+      grid-column: span 1;
+      order: 60;
+    }
+    .link-card:nth-child(6) {
+      order: 50;
+    }
+    .link-card:nth-child(7) {
+      grid-column: span 2;
+      order: 80;
+    }
+    .link-card:nth-child(8) {
+      order: 70;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr !important;
+
+    .link-card:nth-child(5) {
+      order: 50;
+    }
+    .link-card:nth-child(6) {
+      grid-column: span 1;
+      order: 60;
+    }
+    .link-card:nth-child(7) {
+      grid-column: span 1;
+      order: 80;
+    }
+    .link-card:nth-child(8) {
+      order: 70;
+    }
+  }
+
+  @media screen and (max-width: 766px) {
+    grid-template-columns: 1fr !important;
+
+    .link-card {
+      grid-column: span 1 !important;
+    }
   }
 }

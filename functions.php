@@ -29,6 +29,22 @@ function uv_script_and_styles()
 add_action('enqueue_block_assets', 'uv_script_and_styles');
 
 
+/**
+ * Register nav menus
+ */
+if (! function_exists('uv_register_nav_menu')) {
+
+    function uv_register_nav_menu()
+    {
+        register_nav_menus(array(
+            'main_menu' => __('Main Menu', 'uv-theme'),
+
+        ));
+    }
+    add_action('after_setup_theme', 'uv_register_nav_menu', 0);
+}
+
+
 
 
 

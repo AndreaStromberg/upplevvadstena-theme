@@ -20,15 +20,15 @@
 
 
                 <!-- Menu -->
-                <nav class="site-menu">
-                    <ul>
-                        <li><a href="">Se & Upplev</a></li>
-                        <li><a href="">Äta & Bo</a></li>
-                        <li><a href="">Butiker</a></li>
-                        <li><a href="">Evenemang</a></li>
-                        <li><a href="">Historia</a></li>
-                    </ul>
-                </nav>
+                <?php
+                $args = array(
+                    'theme-location' => 'main_menu',
+                    'containter' => 'nav',
+                    'container_class' => 'site-menu'
+                );
+
+                wp_nav_menu($args);
+                ?>
 
 
                 <!-- Buttons -->
@@ -82,14 +82,22 @@
 
         <nav class="responsive-menu">
 
+
+
             <div class="responsive-menu__inner">
-                <ul>
-                    <li><a href="">Se & Upplev</a></li>
-                    <li><a href="">Äta & Bo</a></li>
-                    <li><a href="">Butiker</a></li>
-                    <li><a href="">Evenemang</a></li>
-                    <li><a href="">Historia</a></li>
-                </ul>
+                <!-- Kryssknapp för att stänga menyn -->
+                <button class="close-menu">
+                    <span>X</span>
+                </button>
+
+                <?php
+                $args = array(
+                    'theme_location' => 'main_menu',
+                    'container' => 'ul'
+                );
+
+                wp_nav_menu($args);
+                ?>
 
                 <!-- <ul class="responsive-menu__buttons">
                     <li class="responsive-menu__item responsive-menu__item--language">
