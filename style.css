@@ -63,6 +63,10 @@ figure {
   --uv-spacing-2xl: 48px;
   --uv-spacing-3xl: 64px;
   --uv-spacing-4xl: 100px;
+
+  @media screen and (max-width: 766px) {
+    --uv-spacing-4xl: 64px;
+  }
 }
 
 /* TYPOGRAPHY */
@@ -581,7 +585,109 @@ figure {
     grid-template-columns: 1fr !important;
 
     .link-card {
+      min-height: unset !important;
+      aspect-ratio: 3 / 2 !important;
+
+      & > div {
+        .wp-block-group {
+          padding-bottom: var(--uv-spacing-l) !important;
+          p {
+            margin: 0 !important;
+            display: flex;
+          }
+
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .link-card {
       grid-column: span 1 !important;
+    }
+  }
+}
+
+.evenemang {
+  @media screen and (max-width: 1100px) {
+    /* padding: 3.75rem 3rem !important; */
+
+    .evenemang__heading {
+      font-size: var(--uv-font-size-2xl) !important;
+    }
+
+    .evenemang__ingress {
+      font-size: 1.125rem !important;
+    }
+  }
+
+  @media screen and (max-width: 766px) {
+    /* padding: 3.75rem 1rem !important;
+    gap: 2rem !important; */
+
+    .event__feed .evenemang__miniheading {
+      font-size: 1.5rem !important;
+    }
+
+    .evenemang__heading {
+      font-size: 2rem !important;
+    }
+
+    .evenemang__ingress {
+      font-size: 1rem !important;
+    }
+
+    .event__feed {
+      /* padding-inline: var(--uv-spacing-default) !important; */
+      padding-left: var(--uv-spacing-default) !important;
+      padding-right: var(--uv-spacing-default) !important;
+    }
+  }
+}
+
+.site-footer {
+  @media screen and (max-width: 1100px) {
+    .site-footer__inner {
+      flex-wrap: wrap !important;
+
+      .wp-block-column {
+        flex-basis: 30% !important;
+        &:first-of-type {
+          flex-basis: 100% !important;
+          flex-grow: 1 !important;
+          text-align: center;
+
+          img {
+            width: 148px !important;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 782px) {
+    .site-footer__inner {
+      justify-content: center !important;
+      text-align: center;
+
+      .wp-block-column {
+        flex-basis: 100% !important;
+      }
+    }
+
+    .site-footer__menu {
+      ul {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .social {
+      justify-content: center;
     }
   }
 }
