@@ -646,6 +646,51 @@ figure {
   }
 }
 
+.page,
+.single {
+  .page__header,
+  .single__header {
+    display: grid;
+    grid-template-columns: var(--uv-layout-grid);
+    background-color: var(--uv-color-dark);
+    color: var(--uv-color-light);
+
+    min-height: 400px;
+    margin-bottom: var(--uv-spacing-3xl);
+    padding-top: var(--uv-spacing-4xl);
+    padding-bottom: var(--uv-spacing-2xl);
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      position: relative;
+      margin-top: var(--uv-spacing-4xl);
+      grid-column: content;
+      align-self: center;
+      text-transform: uppercase;
+      font-family: var(--uv-font-size-3xl);
+      margin-bottom: 0;
+      font-family: var(--uv-font-headings);
+    }
+
+    .single__published {
+      grid-column: content;
+      position: relative;
+      font-family: var(--uv-font-sans);
+      font-size: var(--uv-font-size-lg);
+    }
+  }
+}
+
 .site-footer {
   @media screen and (max-width: 1100px) {
     .site-footer__inner {
